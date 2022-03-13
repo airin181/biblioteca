@@ -1,3 +1,76 @@
-*{
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@200&display=swap');
+/*font-family: 'Smooch Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+/*font-family: 'Orbitron', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+/*font-family: 'Homemade Apple', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+/*font-family: 'Dosis', sans-serif;*/
+
+* {
     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.header-index {
+    background: linear-gradient(90deg, #000A57 0%, #000328 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.header-title {
+    color: #eeeeee;
+    margin: 0;
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 54px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.header-subtitle {
+    font-family: 'Homemade Apple', cursive;
+    margin-top: -3px;
+    color: white;
+    text-align: center;
+    transform: rotate(359deg);
+    font-size: 15px;
+}
+
+.header-logo {
+    width: 60px;
+}
+
+
+.footer-index {
+    background-color: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-index {
+    background: linear-gradient(90deg, #000A57 0%, #000328 100%);
+}
+
+footer>p {
+    color: white;
+    font-family: 'Smooch Sans', sans-serif;
+    text-align: center;
+    font-size: 18px;
 }
