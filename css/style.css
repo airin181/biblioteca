@@ -16,6 +16,13 @@ body {
     margin: 0;
 }
 
+
+/*
+
+HEADER
+
+*/
+
 .header-index {
     background: linear-gradient(90deg, #000A57 0%, #000328 100%);
     display: flex;
@@ -56,16 +63,85 @@ body {
 }
 
 
+/*
+
+SEARCH
+
+*/
+.search-container{
+    padding: 6px 10px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-div{
+    display: flex;
+}
+
+.search-div img{
+    width: 20px;
+    display: flex;
+}
+
+
+
+/* ________
+
+DASHBOARD
+
+__________*/
+
+#dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category1{
+    border-radius: 25px;
+    width: 85%;
+    margin-top: 25px;
+    max-width: 375px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.category2{
+    margin: 0;
+}
+
+
+#dashboard h3{
+    background-color: #b7deff;
+    font-family: 'Smooch Sans', sans-serif;
+    font-weight: 900;
+    font-size: 25px;
+    margin-top: 0;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+/*
+
+FOOTER
+
+*/
 .footer-index {
-    background-color: black;
+    background: linear-gradient(90deg, #000A57 0%, #000328 100%);
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-}
-
-.footer-index {
-    background: linear-gradient(90deg, #000A57 0%, #000328 100%);
 }
 
 footer>p {
