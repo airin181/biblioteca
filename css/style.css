@@ -96,7 +96,7 @@ DASHBOARD
 
 __________*/
 
-#dashboard {
+#dashboard{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -115,7 +115,6 @@ __________*/
     margin: 0;
 }
 
-
 #dashboard h3{
     background-color: #b7deff;
     font-family: 'Smooch Sans', sans-serif;
@@ -124,10 +123,81 @@ __________*/
     margin-top: 0;
     text-align: center;
     border-radius: 15px;
+    min-width: 350px;
 }
 
+#dashboard2 h3{
+    font-family: 'Smooch Sans', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    margin-top: 0;
+    text-align: center;
+    border-radius: 15px;
+    min-width: 350px;
+    margin-bottom: 3px;
+}
 
+.poster{
+    width: 180px;
+    margin: 10px;
+}
 
+#dashboard2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 25px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-right: 60px;
+    margin-left: 60px;
+    max-width: 350px;
+}
+
+.divButton{
+    display: flex;
+    justify-content: center;
+}
+
+.divInfo{
+    margin-right: 10px;
+}
+
+.divInfo p{
+    text-align: center;
+}
+
+.divImg figure{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.divButton button{
+    font-family: 'Smooch Sans', sans-serif;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    height: 36px;
+    line-height: 34px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #007c89;
+    transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+    padding: 0 18px;
+
+}
+.divButton button:hover{
+    color: #ffffff;
+    background-color: #006570;
+}
 
 
 
