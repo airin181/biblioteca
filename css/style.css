@@ -102,6 +102,15 @@ __________*/
     justify-content: center;
 }
 
+#dashboard span{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+
 .category1{
     border-radius: 25px;
     width: 85%;
@@ -109,22 +118,103 @@ __________*/
     max-width: 375px;
     margin-right: 20px;
     margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
 }
 
 .category2{
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    width: 60%;
+}
+
+.category2 p{
+    font-family: 'Dosis', sans-serif;
+    max-width: fit-content;
 }
 
 #dashboard h3{
-    background-color: #b7deff;
+    background-color: #ffe39b;
     font-family: 'Smooch Sans', sans-serif;
     font-weight: 900;
     font-size: 25px;
     margin-top: 0;
     text-align: center;
     border-radius: 15px;
-    min-width: 350px;
+    margin-bottom: 5px;
+    width: 100%;
+    box-shadow: 0px 3px 8px rgb(119 94 0 / 30%);
 }
+
+#title{
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    border-bottom: dotted;
+    align-self: flex-start;
+    margin-left: 25px;
+}
+
+
+
+#dashboard > span > p:nth-child(2){
+    margin: 20px;
+    font-family: 'Dosis', sans-serif;
+    margin-left: 45px;
+    margin-right: 35px;
+}
+
+#title2{
+    text-align: center;
+    font-size: 20px;
+    font-family: system-ui;
+    margin-bottom: 5px;
+    margin-top: 0;
+    padding: 8px;
+
+}
+
+#title2-div{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #ffe39b; */
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0px 3px 8px rgb(0 0 0 / 30%);
+    /* background-image: url(./media/bg.jpg); */
+}
+
+#title2-div:hover{
+    background-color: #fff4d9;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+    padding: 0 18px;
+    
+}
+
+#title2:hover{
+    transform: scale(1.1);
+}
+
+#banner{
+    width: 100vw;
+    height: 242px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#dashboard > span > p:nth-child(5){
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+
 
 #dashboard2 h3{
     font-family: 'Smooch Sans', sans-serif;
@@ -149,26 +239,96 @@ __________*/
     margin: 25px;
 }
 
-.container{
+#dashboard2>span{
+    width: 100%;
     display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+#back{
+    font-family: 'Smooch Sans', sans-serif;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid #006570;
+    border-radius: 2px;
+    height: 36px;
+    line-height: 34px;
+    font-size: 20px;
+    color: #007c89;
+    font-weight: bolder;
+    background-color: white;
+    transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+    padding: 0 18px;
+}
+
+.readMore{
+    font-family: 'Smooch Sans', sans-serif;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border: 0px solid #000328;
+    border-radius: 2px;
+    height: 36px;
+    line-height: 34px;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bolder;
+    transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+    padding: 0 18px;
+    margin-bottom: 10px;
+    background-color: #007c89;
+}
+
+.readMore:hover{
+    background-color: #bbbbbb;
+}
+
+.back{
+    z-index: 1;
+    background-color: #e99fff;
+    color: white;
+    padding: 10px 30px;
+}
+
+.container{
+/*     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
     margin-right: 60px;
     margin-left: 60px;
-    max-width: 350px;
+    max-width: 350px; */
+    border-radius: 25px;
+    width: 85%;
+    margin-top: 25px;
+    max-width: 375px;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+
 }
 
 .divButton{
     display: flex;
     justify-content: center;
+    margin-bottom: 15px;
 }
 
 .divInfo{
     margin-right: 10px;
+    font-family: 'Dosis', sans-serif;
 }
 
 .divInfo p{
     text-align: center;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .divImg figure{
@@ -208,10 +368,11 @@ FOOTER
 */
 .footer-index {
     background: linear-gradient(90deg, #000A57 0%, #000328 100%);
-    position: fixed;
     left: 0;
-    bottom: 0;
     width: 100%;
+    bottom: 0px;
+    position: relative;
+    padding: 1px;
 }
 
 footer>p {
@@ -219,4 +380,5 @@ footer>p {
     font-family: 'Smooch Sans', sans-serif;
     text-align: center;
     font-size: 18px;
+    position: relative;
 }
