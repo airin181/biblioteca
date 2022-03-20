@@ -17,11 +17,14 @@ body {
 }
 
 
-/*
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>><
 
 HEADER
 
-*/
+<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>><*/
 
 .header-index {
     background: linear-gradient(90deg, #000A57 0%, #000328 100%);
@@ -63,11 +66,14 @@ HEADER
 }
 
 
-/*
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>><
 
 SEARCH
 
-*/
+<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>><*/
 .search-container{
     padding: 6px 10px;
     font-size: 17px;
@@ -90,14 +96,126 @@ SEARCH
 
 
 
-/* ________
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>><
+
+INTRO
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>><*/
+
+#login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#login1{
+    color: black;
+    margin-bottom: 8px;
+    margin-left: 5px;
+}
+
+#login button{
+    width: -webkit-fill-available;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#login img{
+    width: 40px;
+    height: 40px;
+}
+
+#title{
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    border-bottom: dotted;
+    align-self: flex-start;
+    margin-left: 25px;
+}
+
+
+#dashboard > span > p:nth-child(2){ /*txt university*/
+    margin: 20px;
+    font-family: 'Dosis', sans-serif;
+    margin-left: 45px;
+    margin-right: 35px;
+}
+
+#title2{
+    text-align: center;
+    font-size: 20px;
+    font-family: system-ui;
+    margin-bottom: 5px;
+    margin-top: 0;
+    padding: 8px;
+
+}
+
+
+#title2-div{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #ffe39b; */
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0px 3px 8px rgb(0 0 0 / 30%);
+    /* background-image: url(./media/bg.jpg); */
+}
+
+#title2-div:hover{
+    background-color: #fff4d9;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+    padding: 0 18px;
+    
+}
+
+#title2:hover{
+    transform: scale(1.1);
+}
+
+#banner{
+    width: 100vw;
+    height: 242px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#dashboard > span > p:nth-child(5){
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    margin-left: 45px;
+    margin-right: 35px;
+}
+
+
+#dashboard > span > p:nth-child(6) > a{
+    font-family: monospace;
+}
+
+
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>><
+
 
 DASHBOARD
 
-__________*/
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>><*/
+
+
 
 #dashboard{
-    display: flex;
+    display: flex; 
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -139,7 +257,7 @@ __________*/
     max-width: fit-content;
 }
 
-#dashboard h3{
+.category-title{
     background-color: #ffe39b;
     font-family: 'Smooch Sans', sans-serif;
     font-weight: 900;
@@ -152,68 +270,8 @@ __________*/
     box-shadow: 0px 3px 8px rgb(119 94 0 / 30%);
 }
 
-#title{
-    font-size: 20px;
-    font-family: 'Dosis', sans-serif;
-    border-bottom: dotted;
-    align-self: flex-start;
-    margin-left: 25px;
-}
 
 
-
-#dashboard > span > p:nth-child(2){
-    margin: 20px;
-    font-family: 'Dosis', sans-serif;
-    margin-left: 45px;
-    margin-right: 35px;
-}
-
-#title2{
-    text-align: center;
-    font-size: 20px;
-    font-family: system-ui;
-    margin-bottom: 5px;
-    margin-top: 0;
-    padding: 8px;
-
-}
-
-#title2-div{
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background-color: #ffe39b; */
-    justify-content: center;
-    align-content: center;
-    box-shadow: 0px 3px 8px rgb(0 0 0 / 30%);
-    /* background-image: url(./media/bg.jpg); */
-}
-
-#title2-div:hover{
-    background-color: #fff4d9;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
-    padding: 0 18px;
-    
-}
-
-#title2:hover{
-    transform: scale(1.1);
-}
-
-#banner{
-    width: 100vw;
-    height: 242px;
-    object-fit: cover;
-    object-position: center;
-}
-
-#dashboard > span > p:nth-child(5){
-    text-align: center;
-    font-family: 'Dosis', sans-serif;
-}
 
 
 #dashboard2 h3{
@@ -361,17 +419,23 @@ __________*/
 
 
 
-/*
+
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>><
+
 
 FOOTER
 
-*/
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>><*/
+
 .footer-index {
     background: linear-gradient(90deg, #000A57 0%, #000328 100%);
     left: 0;
     width: 100%;
     bottom: 0px;
-    position: relative;
     padding: 1px;
 }
 
@@ -380,5 +444,51 @@ footer>p {
     font-family: 'Smooch Sans', sans-serif;
     text-align: center;
     font-size: 18px;
-    position: relative;
+    
 }
+
+
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>><
+
+
+LOADER
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>><*/
+
+/* Center the loader */
+/* #loader {
+    display: none;
+    margin-top: 10%;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #e99fff;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  } */
+
+
+
+
+
+  @media only screen and (min-width: 768px) {
+
+    #login{
+        flex-direction: row;
+    }
+  }
