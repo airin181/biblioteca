@@ -209,9 +209,7 @@ INTRO
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>><
 
-
 DASHBOARD
-
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>><*/
 
@@ -418,6 +416,16 @@ DASHBOARD
 .divButton button:hover{
     color: #ffffff;
     background-color: #006570;
+}
+
+
+.heart{
+    width: 32px;
+}
+
+.heartFig{
+    padding-left: 10px;
+    margin: 0;
 }
 
 

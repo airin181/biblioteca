@@ -321,7 +321,19 @@ function secondLoop(){
     h3.innerHTML = `${info[i].title}`;
     p1.innerHTML = `<u>Weeks on list:</u> ${info[i].weeks_on_list}`;
     p2.innerHTML = `<u>Description:</u> ${info[i].description}`;
-    amazon.innerHTML = "BUY AT AMAZON!";     
+    amazon.innerHTML = "BUY AT AMAZON!";
+    
+    if(localStorage.getItem("user")){
+        const heartFig = document.createElement("figure")
+        const heart = document.createElement("img")
+        heart.setAttribute("src", "https://img.icons8.com/ios/100/000000/like--v1.png")
+        heart.setAttribute("alt", "like")
+        heart.setAttribute("class", "heart")
+        heartFig.setAttribute("class","heartFig")
+        heartFig.appendChild(heart);
+        container.appendChild(heartFig);
+        console.log("funsiona")
+    }
         
 
     amazon.addEventListener("click", (event) => {
